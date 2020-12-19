@@ -19,36 +19,18 @@
   </head>
   <body>
     <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
+      <label class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
       <label class="logo">Ankit Rajpal</label>
       <ul>
-        <li><a title="#education" onclick="">Education</a></li>
+        <li><a title="#education">Education</a></li>
         <li><a title="#research">Research</a></li>
         <li><a title="#workshops">Workshops</a></li>
         <li><a title="#teaching-ex">Teaching Experience</a></li>
         <li><a title="#ad-ex">Administrative Experience</a></li>
       </ul>
     </nav>
-    <!-- <header>
-      <a title="#" class="logo">
-        <img src="user_1.png" alt="home" />&nbsp;&nbsp;Ankit Rajpal
-      </a>
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <nav>
-        <ul class="nav-items">
-          <li><a title="#education" onclick="">Education</a></li>
-          <li><a title="#research">Research</a></li>
-          <li><a title="#workshops">Workshops</a></li>
-          <li><a title="#teaching-ex">Teaching Experience</a></li>
-          <li><a title="#ad-ex">Administrative Experience</a></li>
-        </ul>
-      </nav>
-    </header> -->
 
     <div class="container">
       <div class="left">
@@ -308,5 +290,15 @@
       $("#teaching-ex").hide();
       $("#ad-ex").hide();
     }
+    $("nav>ul>li>a").on("click", function () {
+      $("nav>ul").css("left", "-100%");
+    });
+    $(".checkbtn").on("click", function () {
+      if ($("nav>ul").css("left") == "0px") {
+        $("nav>ul").css("left", "-100%");
+      } else {
+        $("nav>ul").css("left", "0%");
+      }
+    });
   </script>
 </html>
