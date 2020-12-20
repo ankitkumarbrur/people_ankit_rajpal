@@ -11,6 +11,7 @@ body {
   overflow: hidden;
 }
 /* =================================== */
+/* Navbar css */
 
 nav {
   background: #191919;
@@ -61,10 +62,6 @@ a:hover {
   line-height: 10vh;
   margin-right: 7vw;
   cursor: pointer;
-  display: none;
-}
-
-#check {
   display: none;
 }
 
@@ -131,12 +128,16 @@ h3 {
   text-align: center;
 }
 
+#intro {
+  display: none;
+}
+
 /* ------------------------------------- */
 
 @media (max-width: 1280px) {
   label.logo {
     font-size: 1.5rem;
-    margin-left: 7vw;
+    margin-left: 5vw;
   }
   nav ul li a {
     font-size: 0.9rem;
@@ -147,6 +148,28 @@ h3 {
   .left {
     display: none;
   }
+  #intro {
+    display: block;
+  }
+  .profile-img {
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    /* text-align: center; */
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 1rem;
+    /* text-align: center; */
+  }
+
   .right {
     width: 100vw;
     overflow-y: scroll;
@@ -154,28 +177,30 @@ h3 {
   section {
     width: 88vw;
     margin: 6vh auto;
+    padding: 5vh 5vw;
   }
   .checkbtn {
     display: block;
   }
+
   ul {
     position: fixed;
-    width: 70%;
+    width: 40%;
     height: 100vh;
     background: #191919;
     top: 10vh;
     left: -100%;
-    text-align: center;
+    text-align: left;
     transition: all 0.5s;
     z-index: 1000;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    margin: 50px 4vw;
+    line-height: 3rem;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 1rem;
   }
   a:hover,
   a.active {
@@ -184,37 +209,25 @@ h3 {
   }
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
   section {
-    width: 88vw;
-    margin: 1vh auto;
-    display: none;
-  }
-  .checkbtn {
-    display: block;
+    /* width: 88vw; */
+    margin: 3vh auto;
   }
   ul {
-    position: fixed;
     width: 70%;
-    height: 100vh;
-    background: #191919;
-    top: 10vh;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 1000;
   }
   nav ul li {
     display: block;
-    margin: 50px 0;
-    line-height: 30px;
+    /* margin: 50px 0; */
+    line-height: 1.8rem;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 0.9rem;
   }
-  a:hover,
+  /* a:hover,
   a.active {
     background: none;
     color: rgb(3, 201, 201);
-  }
-} */
+  } */
+}

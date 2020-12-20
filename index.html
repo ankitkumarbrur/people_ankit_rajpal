@@ -22,7 +22,7 @@
       <label class="checkbtn">
         <i class="fas fa-bars"></i>
       </label>
-      <label class="logo">Ankit Rajpal</label>
+      <label class="logo"><a title="#">Ankit Rajpal</a> </label>
       <ul>
         <li><a title="#education">Education</a></li>
         <li><a title="#research">Research</a></li>
@@ -40,12 +40,22 @@
           </div>
           <h2>Ankit Rajpal</h2>
           <h3>
-            Assistant Professor, Department od Computer Science, University of
+            Assistant Professor, Department of Computer Science, University of
             Delhi
           </h3>
         </section>
       </div>
       <div class="right">
+        <section id="intro">
+          <div>
+            <img src="profile.jpeg" class="profile-img" alt="Ankit Rajpal" />
+          </div>
+          <h2>Ankit Rajpal</h2>
+          <h3>
+            Assistant Professor, Department of Computer Science, University of
+            Delhi
+          </h3>
+        </section>
         <section id="about">
           <h1>About Me</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
@@ -275,8 +285,10 @@
       $("a").on("click", function (e) {
         if ($(e.target).attr("title") == "#") {
           hide();
+          $("#intro").show();
           $("#about").show();
         } else {
+          $("#intro").hide();
           $("#about").hide();
           hide();
           $($(e.target).attr("title")).show();
