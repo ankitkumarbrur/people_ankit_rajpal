@@ -115,8 +115,6 @@ h1 {
   font-family: "Orbitron", cursive;
   font-size: 3rem;
   border-bottom: 3px solid #ef5350;
-  /* position: absolute; */
-  /* top: 50%; */
 }
 
 h2 {
@@ -129,8 +127,6 @@ h2 {
 h3 {
   font-size: 2rem;
   margin-top: 1rem;
-  /* width: 25vw; */
-  /* border-bottom: 2px solid #fbc02d; */
 }
 
 #intro {
@@ -182,13 +178,11 @@ section > li {
 
   h2 {
     font-size: 2rem;
-    /* text-align: center; */
     padding: 10px;
   }
 
   h3 {
     font-size: 1.6rem;
-    /* text-align: center; */
   }
 
   .right {
