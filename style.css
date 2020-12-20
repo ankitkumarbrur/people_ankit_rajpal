@@ -213,7 +213,7 @@ section > li {
   nav ul li {
     display: block;
     margin: 50px 4vw;
-    line-height: 3rem;
+    line-height: 2.5rem;
   }
   nav ul li a {
     font-size: 1rem;
