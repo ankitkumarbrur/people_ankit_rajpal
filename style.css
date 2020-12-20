@@ -210,7 +210,7 @@ section > li {
     z-index: 1000;
   }
   nav ul li {
-    display: inline;
+    display: block;
     margin: 50px 4vw;
     line-height: 3rem;
   }
