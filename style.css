@@ -9,7 +9,10 @@ body {
   color: white;
   font-family: "Quicksand", sans-serif;
   overflow: hidden;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
 }
+
 /* =================================== */
 /* Navbar css */
 
@@ -70,7 +73,7 @@ ul > li > a:hover {
   color: white;
   width: 27vw;
   height: 100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
   float: left;
 }
 
@@ -80,7 +83,7 @@ ul > li > a:hover {
   width: 73vw;
   height: 100vh;
   overflow-y: scroll;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* sections */
@@ -149,6 +152,15 @@ section > li {
 .list-link {
   color: #60a9e6;
   text-decoration: none;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 20px;
+}
+
+section li {
+  text-align: justify;
 }
 
 /* ------------------------------------- */
