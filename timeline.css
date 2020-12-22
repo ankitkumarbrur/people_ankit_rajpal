@@ -83,6 +83,18 @@ strong {
 
 @media (max-width: 800px) {
   .timeline {
-    max-width: 65%;
+    max-width: 95%;
+  }
+  .timeline h3 {
+    padding-top: 50px;
+  }
+  .timeline .event:before {
+    left: 0px;
+    /* color: rgba(255, 255, 255, 0.4);
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px; */
   }
 }
